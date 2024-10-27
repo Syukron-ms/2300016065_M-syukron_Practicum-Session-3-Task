@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Page Appearance & My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Change Page Appearance & My To-Do List</h1>
+        <label for="bg-color">Select Background Color:</label>
+        <select id="bg-color">
+            <option value="white">White</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="lightgreen">Light Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        <br><br>
+        <label for="font-size">Select Font Size:</label>
+        <input type="range" id="font-size" min="12" max="36" value="16">
+
+        <br><br>
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+
+        <br><br>
+        <label for="font-style">Select Font Style:</label>
+        <select id="font-style">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="Courier, monospace">Courier</option>
+        </select>
+        <br><br>
+        <h2>My To-Do List</h2>
+        <input type="text" id="newTask" placeholder="Add a new task...">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
